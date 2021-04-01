@@ -1,0 +1,87 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Flutter",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "emulator-5554",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+        },
+        {
+            "name": "emulator-5556",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5556"
+        },
+        {
+            "name": "chrome",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome"
+        },
+        {
+            "name": "iPhone",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "6FDDCC5C-6A07-45E9-A7A6-CB86A4F870FB"
+        },
+        {
+            "name": "device",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "192.168.100.231:5555"
+        },
+        {
+            "name": "device2",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "192.168.100.28:5555"
+        },
+        {
+            "name": "tablet",
+            "request": "launch",
+            "type": "dart",
+            // "deviceId": "192.168.100.105:5555"
+            "deviceId": "R9CN4025VEJ"
+        },
+        {
+            "name": "samsung",
+            "request": "launch",
+            "type": "dart",
+            // "deviceId": "192.168.100.146:5555"
+            "deviceId": "32011c590802344a"
+        },
+    ],
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": ["emulator-5554", "emulator-5556", "iPhone"],
+        },
+        {
+            "name": "All Android Devices",
+            "configurations": ["emulator-5554", "emulator-5556"],
+        },
+        {
+            "name": "3 Devices",
+            "configurations": ["emulator-5554", "emulator-5556","tablet"],
+        },
+        {
+            "name": "2 Devices",
+            "configurations": ["emulator-5554", "device"],
+        },
+        {
+            "name": "2 real device",
+            "configurations": ["device", "device2"],
+        },
+    ]
+}
